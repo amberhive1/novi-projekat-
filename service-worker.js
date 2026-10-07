@@ -1,4 +1,4 @@
-const CACHE_NAME = 'evidencija-namaza-v3';
+const CACHE_NAME = 'evidencija-namaza-v4';
 
 const APP_FILES = [
   '/',
