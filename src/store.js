@@ -13,12 +13,7 @@ export const statuses = [
 const seed = () => ({
   activeYear: currentSchoolYear(),
   years: [currentSchoolYear()],
-  students: [
-    ['Ahmed Ahmedović', 1], ['Haris Karić', 1], ['Mustafa Alić', 1], ['Lejla Hadžić', 1],
-    ['Fatima Smajić', 2], ['Omer Kovačević', 2], ['Emina Bašić', 2], ['Yusuf Mujić', 2],
-    ['Amina Džafić', 3], ['Kerim Mehić', 3], ['Hana Šabić', 3], ['Tarik Imamović', 3],
-    ['Merjem Halilović', 4], ['Amar Husić', 4], ['Ajša Jusić', 4], ['Hamza Selimović', 4]
-  ].map(([name, grade], i) => ({ id: `seed-${i + 1}`, name, grade, year: currentSchoolYear(), active: true })),
+  students: [],
   records: []
 });
 
