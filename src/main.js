@@ -149,6 +149,10 @@ function layout(content) {
             class="${route.page === 'settings' ? 'active' : ''}">
             POSTAVKE
           </button>
+          <button
+  class="exit-button">
+  IZLAZ
+</button>
 
         </nav>
 
@@ -572,7 +576,7 @@ function summary() {
   const counts = {
     P: 0,
     N: 0,
-    B: 0,
+    O: 0,
     K: 0
   };
 
@@ -631,8 +635,8 @@ function summary() {
         </div>
 
         <div class="summary-item sick">
-          <strong>${counts.B}</strong>
-          <span>Bolestan</span>
+          <strong>${counts.O}</strong>
+          <span>Opravdano</span>
         </div>
 
         <div class="summary-item home">
@@ -912,7 +916,7 @@ function history() {
   const totals = {
     P: 0,
     N: 0,
-    B: 0,
+    O: 0,
     K: 0
   };
 
@@ -965,8 +969,8 @@ function history() {
         </div>
 
         <div class="summary-item sick">
-          <strong>${totals.B}</strong>
-          <span>Bolestan</span>
+          <strong>${totals.O}</strong>
+          <span>Opravdano</span>
         </div>
 
         <div class="summary-item home">
@@ -1941,7 +1945,7 @@ function renderMonthlyCell(
 
   const problem =
     values.some(v =>
-      ['N', 'B', 'K'].includes(v)
+      ['N', 'O', 'K'].includes(v)
     );
 
   const text =
@@ -1995,7 +1999,7 @@ function studentHasProblem(
 
     return selectedPrayers.some(
       prayer =>
-        ['N', 'B', 'K'].includes(
+        ['N', 'O', 'K'].includes(
           record.statuses?.[prayer]
         )
     );
@@ -2452,7 +2456,6 @@ function studentDay() {
 /* =========================================================
    POSTAVKE
    ========================================================= */
-
 function settings() {
 
   return `
@@ -2468,88 +2471,88 @@ function settings() {
 
     <section class="settings-page">
 
-          <div class="settings-card">
+      <div class="settings-cloud">
 
-        <h2>Sigurnosna kopija</h2>
+        <div class="settings-card">
 
-        <p>
-          Sačuvajte kompletnu evidenciju kako biste je mogli vratiti na ovom ili drugom uređaju.
-        </p>
+          <h2>Sigurnosna kopija</h2>
 
-        <div class="settings-actions">
+          <p>
+            Sačuvajte kompletnu evidenciju kako biste je mogli vratiti na ovom ili drugom uređaju.
+          </p>
 
-          <button class="secondary-button" data-action="exportJson">
-  SAČUVAJ SIGURNOSNU KOPIJU
-</button>
+          <div class="settings-actions">
 
-<button class="secondary-button" data-action="importJson">
-  VRATI SIGURNOSNU KOPIJU
-</button>
+            <button
+              class="secondary-button"
+              data-action="exportJson">
+              SAČUVAJ SIGURNOSNU KOPIJU
+            </button>
 
-          <input
-            id="backup-file-input"
-            type="file"
-            accept="application/json,.json"
-            style="display:none;">
+            <button
+              class="secondary-button"
+              data-action="importJson">
+              VRATI SIGURNOSNU KOPIJU
+            </button>
+
+            <input
+              id="backup-file-input"
+              type="file"
+              accept="application/json,.json"
+              style="display:none;">
+
+          </div>
 
         </div>
 
-      </div>
-      <div class="settings-card">
+<div class="settings-card current-school-year-card">
 
-        <h2>Školska godina</h2>
+  <button
+    type="button"
+    class="secondary-button current-school-year-button">
+    TRENUTNA ŠKOLSKA GODINA ${esc(data.activeYear)}
+  </button>
 
-        <div class="setting-row">
+</div>
 
-          <div>
+<div class="settings-card advance-year-card">
 
-            <strong>
-              Trenutna školska godina
-            </strong>
+  <button
+    class="primary-button"
+    data-action="advanceYear">
+    PREĐI U NOVU ŠKOLSKU GODINU
+  </button>
 
-            <span>
-              ${esc(data.activeYear)}
-            </span>
-
-          </div>
-
-          <button
-            class="primary-button"
-            data-action="advanceYear">
-
-            PREĐI U NOVU ŠKOLSKU GODINU
-
-          </button>
-
+</div>
         </div>
 
-      </div>
+        <div class="settings-card app-info-card">
 
-      <div class="settings-card">
+          <h2>Podaci aplikacije</h2>
 
-        <h2>Podaci aplikacije</h2>
+          <div class="setting-info">
 
-        <div class="setting-info">
+            <div>
+              Učenika:
+              <strong>
+                ${data.students.length}
+              </strong>
+            </div>
 
-          <div>
-            Učenika:
-            <strong>
-              ${data.students.length}
-            </strong>
-          </div>
+            <div>
+              Evidencija:
+              <strong>
+                ${data.records.length}
+              </strong>
+            </div>
 
-          <div>
-            Evidencija:
-            <strong>
-              ${data.records.length}
-            </strong>
-          </div>
+            <div>
+              Školskih godina:
+              <strong>
+                ${data.years.length}
+              </strong>
+            </div>
 
-          <div>
-            Školskih godina:
-            <strong>
-              ${data.years.length}
-            </strong>
           </div>
 
         </div>

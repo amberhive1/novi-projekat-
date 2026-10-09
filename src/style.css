@@ -1,1731 +1,15410 @@
 :root {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   font-family:
+
+
+
+
+
+
+
     Inter,
+
+
+
+
+
+
+
     ui-sans-serif,
+
+
+
+
+
+
+
     system-ui,
+
+
+
+
+
+
+
     -apple-system,
+
+
+
+
+
+
+
     BlinkMacSystemFont,
+
+
+
+
+
+
+
     "Segoe UI",
+
+
+
+
+
+
+
     sans-serif;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   color: #ffffff;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   font-synthesis: none;
+
+
+
+
+
+
+
   text-rendering: optimizeLegibility;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   --green: #176b57;
+
+
+
+
+
+
+
   --green-dark: #0f5142;
+
+
+
+
+
+
+
   --green-light: #e7f3ef;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   --border: rgba(255, 255, 255, 0.35);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   --text: #ffffff;
+
+
+
+
+
+
+
   --muted: rgba(255, 255, 255, 0.88);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   --white: #ffffff;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   --shadow:
+
+
+
+
+
+
+
     0 8px 28px rgba(0, 0, 0, 0.18);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   --radius: 16px;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =========================================================
+
+
+
+
+
+
+
    OSNOVNO
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
+
+
+
+
+
+
+
   box-sizing: border-box;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 html,
+
+
+
+
+
+
+
 body {
+
+
+
+
+
+
+
   margin: 0;
+
+
+
+
+
+
+
   min-height: 100%;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 html {
+
+
+
+
+
+
+
   background: #18251f;
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
+
+
+
+
+
+
+
   min-height: 100vh;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 background-image: url("/src/medresa.jpg");  background-size: cover;
+
+
+
+
+
+
+
   background-position: center center;
+
+
+
+
+
+
+
   background-repeat: no-repeat;
+
+
+
+
+
+
+
   background-attachment: fixed;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   color: var(--text);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   position: relative;
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    TAMNI SLOJ PREKO SLIKE
+
+
+
+
+
+
+
    ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =========================================================
+
+
+
+
+
+
+
    APLIKACIJA
+
+
+
+
+
+
+
    ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #app {
+
+
+
+
+
+
+
   min-height: 100vh;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   position: relative;
+
+
+
+
+
+
+
   z-index: 1;
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .app-shell {
+
+
+
+
+
+
+
   width: min(1100px, calc(100% - 32px));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   margin: 0 auto;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   padding: 28px 0 50px;
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    GLAVNO ZAGLAVLJE
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .topbar {
+
+
+
+
+
+
+
   background: transparent;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border: 0;
+
+
+
+
+
+
+
   border-radius: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   padding: 65px 10px 12px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   margin-bottom: 18px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   box-shadow: none;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   text-align: center;
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    NASLOV
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .brand-title {
+
+
+
+
+
+
+
   color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   font-size: clamp(25px, 4vw, 38px);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   line-height: 1.15;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   font-weight: 900;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   letter-spacing: 0.3px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   text-align: center;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   text-shadow:
+
+
+
+
+
+
+
     0 2px 5px rgba(0, 0, 0, 0.65),
+
+
+
+
+
+
+
     0 4px 14px rgba(0, 0, 0, 0.35);
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    ŠKOLSKA GODINA
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .school-year-title {
+
+
+
+
+
+
+
   margin-top: 8px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   color: rgba(255, 255, 255, 0.96);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   font-size: 16px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   font-weight: 700;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   text-align: center;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   text-shadow:
+
+
+
+
+
+
+
     0 2px 5px rgba(0, 0, 0, 0.65);
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    GLAVNI MENI
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-nav {
+
+
+
+
+
+
+
   display: grid;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   grid-template-columns:
+
+
+
+
+
+
+
     repeat(4, 1fr);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   gap: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   margin-top: 20px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   margin-bottom: 0;
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-nav button {
+
+
+
+
+
+
+
   width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   min-height: 46px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   padding: 10px 14px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   background:
+
+
+
+
+
+
+
     rgba(255, 255, 255, 0.16);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border:
+
+
+
+
+
+
+
     1px solid rgba(255, 255, 255, 0.60);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   border-radius: 12px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   font-size: 14px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   font-weight: 800;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   text-shadow:
+
+
+
+
+
+
+
     0 1px 3px rgba(0, 0, 0, 0.55);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   box-shadow:
+
+
+
+
+
+
+
     0 4px 12px rgba(0, 0, 0, 0.12);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   backdrop-filter: blur(5px);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   -webkit-backdrop-filter: blur(5px);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   transition:
+
+
+
+
+
+
+
     background 0.2s ease,
+
+
+
+
+
+
+
     transform 0.15s ease,
+
+
+
+
+
+
+
     border-color 0.2s ease;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-nav button:hover {
+
+
+
+
+
+
+
   background:
+
+
+
+
+
+
+
     rgba(255, 255, 255, 0.30);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border-color:
+
+
+
+
+
+
+
     rgba(255, 255, 255, 0.90);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   transform: translateY(-1px);
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .main-nav button.active {
+
+
+
+
+
+
+
   background:
+
+
+
+
+
+
+
     rgba(23, 107, 87, 0.78);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border-color:
+
+
+
+
+
+
+
     rgba(255, 255, 255, 0.80);
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+.exit-button {
+
+
+
+
+
+
+
+  width: 50%;
+
+
+
+
+
+
+
+margin-left: 52%;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    GLAVNI SADRŽAJ
+
+
+
+
+
+
+
    ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .app-main {
+
+
+
+
+
+
+
   padding: 0;
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    POČETNA STRANICA
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .welcome {
+
+
+
+
+
+
+
   background: transparent;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   border: 0;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border-radius: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   padding: 26px 10px 30px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   margin: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   box-shadow: none;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   text-align: center;
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    DATUM
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .welcome-date {
+
+
+
+
+
+
+
   color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   font-size: 18px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   font-weight: 700;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   text-shadow:
+
+
+
+
+
+
+
     0 2px 5px rgba(0, 0, 0, 0.70);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   margin-bottom: 8px;
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    TEKST ISPOD DATUMA
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .section-intro {
+
+
+
+
+
+
+
   color: #ffffff;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   font-size: 16px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   line-height: 1.45;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   font-weight: 600;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   text-shadow:
+
+
+
+
+
+
+
     0 2px 5px rgba(0, 0, 0, 0.70);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   margin-bottom: 18px;
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    NAMAZI
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .prayer-home-grid {
+
+
+
+
+
+
+
   display: grid;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   grid-template-columns:
+
+
+
+
+
+
+
     repeat(5, 1fr);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   gap: 12px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   max-width: 900px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   margin: 0 auto;
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .prayer-home-button {
+
+
+
+
+
+
+
   min-height: 64px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   padding: 12px 16px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   background:
+
+
+
+
+
+
+
     rgba(25, 40, 35, 0.58);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border:
+
+
+
+
+
+
+
     1px solid rgba(255, 255, 255, 0.65);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border-radius: 14px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   color: #ffffff;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   font-size: 16px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   font-weight: 900;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   text-shadow:
+
+
+
+
+
+
+
     0 2px 5px rgba(0, 0, 0, 0.75);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   box-shadow:
+
+
+
+
+
+
+
     0 5px 15px rgba(0, 0, 0, 0.15);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   backdrop-filter: blur(3px);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   -webkit-backdrop-filter: blur(3px);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   transition:
+
+
+
+
+
+
+
     background 0.2s ease,
+
+
+
+
+
+
+
     transform 0.15s ease,
+
+
+
+
+
+
+
     border-color 0.2s ease;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .prayer-home-button:hover {
+
+
+
+
+
+
+
   background:
+
+
+
+
+
+
+
     rgba(23, 107, 87, 0.75);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border-color:
+
+
+
+
+
+
+
     rgba(255, 255, 255, 0.90);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   transform: translateY(-2px);
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =========================================================
+
+
+
+
+
+
+
    OSTALE STRANICE
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main section:not(.welcome) {
+
+
+
+
+
+
+
   background:
+
+
+
+
+
+
+
     rgba(255, 255, 255, 0.93);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   color: #17231f;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border:
+
+
+
+
+
+
+
     1px solid rgba(255, 255, 255, 0.70);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border-radius: var(--radius);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   padding: 22px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   margin-bottom: 20px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   box-shadow:
+
+
+
+
+
+
+
     0 8px 28px rgba(0, 0, 0, 0.18);
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =========================================================
+
+
+
+
+
+
+
    NASLOVI OSTALIH STRANICA
+
+
+
+
+
+
+
    ========================================================= */
 
-h1,
-h2,
-h3 {
-  line-height: 1.2;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 h1,
+
+
+
+
+
+
+
 h2,
+
+
+
+
+
+
+
 h3 {
-  color: #17231f;
+
+
+
+
+
+
+
+  line-height: 1.2;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1,
+
+
+
+
+
+
+
+h2,
+
+
+
+
+
+
+
+h3 {
+
+
+
+
+
+
+
+  color: #17231f;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 h2 {
+
+
+
+
+
+
+
   margin: 0 0 8px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   font-size:
+
+
+
+
+
+
+
     clamp(26px, 5vw, 38px);
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
 h3 {
+
+
+
+
+
+
+
   margin: 0 0 8px;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 p {
+
+
+
+
+
+
+
   line-height: 1.5;
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .muted {
+
+
+
+
+
+
+
   color: #68756f;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =========================================================
+
+
+
+
+
+
+
    OPĆA DUGMAD
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 button {
+
+
+
+
+
+
+
   font: inherit;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   cursor: pointer;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border:
+
+
+
+
+
+
+
     1px solid #cbdad4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   border-radius: 11px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   background: #ffffff;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   color: #17231f;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   padding: 10px 16px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   min-height: 42px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   font-weight: 650;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   transition:
+
+
+
+
+
+
+
     background 0.15s ease,
+
+
+
+
+
+
+
     border-color 0.15s ease,
+
+
+
+
+
+
+
     transform 0.1s ease,
+
+
+
+
+
+
+
     box-shadow 0.15s ease;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 button:hover {
+
+
+
+
+
+
+
   border-color: var(--green);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   background: var(--green-light);
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 button:active {
+
+
+
+
+
+
+
   transform: translateY(1px);
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 button:focus-visible {
+
+
+
+
+
+
+
   outline:
+
+
+
+
+
+
+
     3px solid rgba(23, 107, 87, 0.22);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   outline-offset: 2px;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =========================================================
+
+
+
+
+
+
+
    GLAVNI GUMBI NAMAZA NA OSTALIM STRANICAMA
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .prayer-grid,
+
+
+
+
+
+
+
 .prayers,
+
+
+
+
+
+
+
 .actions {
+
+
+
+
+
+
+
   display: grid;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   grid-template-columns:
+
+
+
+
+
+
+
     repeat(5, 1fr);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   gap: 12px;
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .prayer-grid button,
+
+
+
+
+
+
+
 .prayers button {
+
+
+
+
+
+
+
   min-height: 72px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   background:
+
+
+
+
+
+
+
     linear-gradient(
+
+
+
+
+
+
+
       180deg,
+
+
+
+
+
+
+
       #ffffff,
+
+
+
+
+
+
+
       #f4faf7
+
+
+
+
+
+
+
     );
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border:
+
+
+
+
+
+
+
     1px solid #cfe0da;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   color: var(--green-dark);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   font-size: 17px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   font-weight: 800;
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .prayer-grid button:hover,
+
+
+
+
+
+
+
 .prayers button:hover {
+
+
+
+
+
+
+
   background: var(--green);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   color: white;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border-color: var(--green);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   box-shadow:
+
+
+
+
+
+
+
     0 8px 18px
+
+
+
+
+
+
+
     rgba(23, 107, 87, 0.18);
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    RAZREDI
+
+
+
+
+
+
+
    ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .grade-grid,
+
+
+
+
+
+
+
 .grades,
+
+
+
+
+
+
+
 .grade-cards {
+
+
+
+
+
+
+
   display: grid;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   grid-template-columns:
+
+
+
+
+
+
+
     repeat(4, 1fr);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   gap: 14px;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .grade-card,
+
+
+
+
+
+
+
 .grade-grid button,
+
+
+
+
+
+
+
 .grades button,
+
+
+
+
+
+
+
 .grade-cards button {
+
+
+
+
+
+
+
   min-height: 90px;
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .grade-card button,
+
+
+
+
+
+
+
 .grade-grid button,
+
+
+
+
+
+
+
 .grades button,
+
+
+
+
+
+
+
 .grade-cards button {
+
+
+
+
+
+
+
   width: 100%;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =========================================================
+
+
+
+
+
+
+
    KARTICE
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .card {
+
+
+
+
+
+
+
   background: #ffffff;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border:
+
+
+
+
+
+
+
     1px solid #dce7e2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   border-radius: var(--radius);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   padding: 20px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   box-shadow: var(--shadow);
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    UČENIK
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .student-card {
+
+
+
+
+
+
+
   background: #ffffff;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border:
+
+
+
+
+
+
+
     1px solid #dce7e2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   border-radius: 20px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   padding: 28px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   box-shadow: var(--shadow);
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .student-name {
+
+
+
+
+
+
+
   font-size:
+
+
+
+
+
+
+
     clamp(24px, 5vw, 34px);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   font-weight: 800;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   margin-bottom: 20px;
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    STATUSI
+
+
+
+
+
+
+
    ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .status-grid,
+
+
+
+
+
+
+
 .status-buttons {
+
+
+
+
+
+
+
   display: grid;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   grid-template-columns:
+
+
+
+
+
+
+
     repeat(4, 1fr);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   gap: 10px;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .status-grid button,
+
+
+
+
+
+
+
 .status-buttons button {
+
+
+
+
+
+
+
   min-height: 58px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   font-size: 15px;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =========================================================
+
+
+
+
+
+
+
    PROGRESS
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .progress,
+
+
+
+
+
+
+
 .progress-bar {
+
+
+
+
+
+
+
   width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   height: 10px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   background: #e5eeea;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   border-radius: 999px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   overflow: hidden;
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .progress > *,
+
+
+
+
+
+
+
 .progress-bar > * {
+
+
+
+
+
+
+
   height: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   background: var(--green);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border-radius: inherit;
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    NAVIGACIJA UNUTAR STRANICA
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 nav {
+
+
+
+
+
+
+
   display: flex;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   flex-wrap: wrap;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   gap: 10px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   margin-bottom: 18px;
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 nav button {
+
+
+
+
+
+
+
   flex: 1;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =========================================================
+
+
+
+
+
+
+
    TABELE
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .table-wrap {
+
+
+
+
+
+
+
   width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   overflow-x: auto;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border:
+
+
+
+
+
+
+
     1px solid #dce7e2;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border-radius: 14px;
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 table {
+
+
+
+
+
+
+
   width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   min-width: 700px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border-collapse: collapse;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   background: white;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 th,
+
+
+
+
+
+
+
 td {
+
+
+
+
+
+
+
   padding: 13px 14px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border-bottom:
+
+
+
+
+
+
+
     1px solid #e5ece9;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   text-align: left;
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 th {
+
+
+
+
+
+
+
   background: #eef6f2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   color: var(--green-dark);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   font-weight: 800;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   white-space: nowrap;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 tbody tr:hover {
+
+
+
+
+
+
+
   background: #f8fbfa;
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 td {
+
+
+
+
+
+
+
   color: #33413c;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* =========================================================
+
+
+
+
+
+
+
    FORME
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 input,
+
+
+
+
+
+
+
 select {
+
+
+
+
+
+
+
   width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   min-height: 44px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   padding: 9px 12px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   border:
+
+
+
+
+
+
+
     1px solid #cbdad4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   border-radius: 10px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   background: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   color: #17231f !important;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   -webkit-text-fill-color: #17231f !important;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   outline: none;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 select option {
+
+
+
+
+
+
+
   color: #17231f;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   background-color: #ffffff;
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 input:focus,
+
+
+
+
+
+
+
 select:focus {
+
+
+
+
+
+
+
   border-color: var(--green);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   box-shadow:
+
+
+
+
+
+
+
     0 0 0 3px
+
+
+
+
+
+
+
     rgba(23, 107, 87, 0.12);
+
+
+
+
+
+
+
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 label {
+
+
+
+
+
+
+
   display: block;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   margin-bottom: 6px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   color: #43514b;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   font-size: 14px;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   font-weight: 700;
+
+
+
+
+
+
+
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =========================================================
+
+
+
+
+
+
+
    STATUS OZNAKE
+
+
+
+
+
+
+
    ========================================================= */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .badge,
+
+
+
+
+
+
+
 .status {
+
+
+
+
+
+
+
   display: inline-flex;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  align-items: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  justify-content: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  min-height: 30px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  padding: 4px 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border-radius: 999px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-size: 13px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-weight: 800;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.saved {
+
+
+
+
+
+
+
+  color: #176b57;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background: #e7f3ef;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border-radius: 999px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  padding: 6px 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-weight: 700;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+
+
+
+
+   DONJA NAVIGACIJA
+
+
+
+
+
+
+
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-actions {
+
+
+
+
+
+
+
+  display: flex;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  justify-content: space-between;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  gap: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  margin-top: 18px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-actions button {
+
+
+
+
+
+
+
+  min-width: 120px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+
+
+
+
+   MOBITEL
+
+
+
+
+
+
+
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  body {
+
+
+
+
+
+
+
+    background-position: center center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    background-attachment: fixed;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .app-shell {
+
+
+
+
+
+
+
+    width:
+
+
+
+
+
+
+
+      min(
+
+
+
+
+
+
+
+        calc(100% - 24px),
+
+
+
+
+
+
+
+        430px
+
+
+
+
+
+
+
+      );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    padding:
+
+
+
+
+
+
+
+      18px 0 35px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .topbar {
+
+
+
+
+
+
+
+    padding: 70px 10px 12px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    margin-bottom: 8px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .brand-title {
+
+
+
+
+
+
+
+    font-size: 24px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    line-height: 1.12;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .school-year-title {
+
+
+
+
+
+
+
+    font-size: 15px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    margin-top: 7px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .main-nav {
+
+
+
+
+
+
+
+    grid-template-columns:
+
+
+
+
+
+
+
+      repeat(2, 1fr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    gap: 8px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    margin-top: 15px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .main-nav button {
+
+
+
+
+
+
+
+    min-height: 44px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font-size: 13px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    padding:
+
+
+
+
+
+
+
+      8px 5px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .welcome {
+
+
+
+
+
+
+
+    padding:
+
+
+
+
+
+
+
+      18px 4px 25px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .welcome-date {
+
+
+
+
+
+
+
+    font-size: 16px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .section-intro {
+
+
+
+
+
+
+
+    font-size: 14px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    margin-bottom: 13px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .prayer-home-grid {
+
+
+
+
+
+
+
+    grid-template-columns:
+
+
+
+
+
+
+
+      1fr;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    gap: 8px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    max-width: 360px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .prayer-home-button {
+
+
+
+
+
+
+
+    min-height: 52px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font-size: 15px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .prayer-grid,
+
+
+
+
+
+
+
+  .prayers {
+
+
+
+
+
+
+
+    grid-template-columns:
+
+
+
+
+
+
+
+      repeat(2, 1fr);
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .prayer-grid button:last-child,
+
+
+
+
+
+
+
+  .prayers button:last-child {
+
+
+
+
+
+
+
+    grid-column:
+
+
+
+
+
+
+
+      1 / -1;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .grade-grid,
+
+
+
+
+
+
+
+  .grades,
+
+
+
+
+
+
+
+  .grade-cards {
+
+
+
+
+
+
+
+    grid-template-columns:
+
+
+
+
+
+
+
+      repeat(2, 1fr);
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .status-grid,
+
+
+
+
+
+
+
+  .status-buttons {
+
+
+
+
+
+
+
+    grid-template-columns:
+
+
+
+
+
+
+
+      repeat(2, 1fr);
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  main section:not(.welcome) {
+
+
+
+
+
+
+
+    padding: 16px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+
+
+
+
+   MALI MOBITEL
+
+
+
+
+
+
+
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  body {
+
+
+
+
+
+
+
+    background-position:
+
+
+
+
+
+
+
+      center center;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .app-shell {
+
+
+
+
+
+
+
+    width:
+
+
+
+
+
+
+
+      calc(100% - 20px);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    padding-top: 12px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .brand-title {
+
+
+
+
+
+
+
+    font-size: 21px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    line-height: 1.13;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .school-year-title {
+
+
+
+
+
+
+
+    font-size: 14px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .main-nav {
+
+
+
+
+
+
+
+    gap: 7px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .main-nav button {
+
+
+
+
+
+
+
+    min-height: 42px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font-size: 12px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border-radius: 10px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .welcome-date {
+
+
+
+
+
+
+
+    font-size: 15px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .section-intro {
+
+
+
+
+
+
+
+    font-size: 15px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    line-height: 1.35;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .prayer-home-grid {
+
+
+
+
+
+
+
+    max-width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    gap: 7px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .prayer-home-button {
+
+
+
+
+
+
+
+    min-height: 49px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    font-size: 14px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    border-radius: 11px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  button {
+
+
+
+
+
+
+
+    width: 100%;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .footer-actions {
+
+
+
+
+
+
+
+    flex-direction: column;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+
+
+
+
+   DESKTOP
+
+
+
+
+
+
+
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 801px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .brand-title {
+
+
+
+
+
+
+
+    font-size: 34px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .school-year-title {
+
+
+
+
+
+
+
+    font-size: 17px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .welcome {
+
+
+
+
+
+
+
+    padding-top: 32px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .welcome-date {
+
+
+
+
+
+
+
+    font-size: 19px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .section-intro {
+
+
+
+
+
+
+
+    font-size: 17px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+
+
+
+
+   NAZIV MEDRESE
+
+
+
+
+
+
+
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.medresa-caption {
+
+
+
+
+
+
+
+  position: relative;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  margin-top: 25px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  padding: 12px 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-size: 23px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-weight: 900;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  letter-spacing: 0.2px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  text-shadow:
+
+
+
+
+
+
+
+    0 2px 7px rgba(0, 0, 0, 0.9);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  z-index: 2;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .medresa-caption {
+
+
+
+
+
+
+
+    font-size: 17px;
+
+
+
+
+
+
+
+    padding-bottom: 20px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+
+
+
+
+   DNEVNA EVIDENCIJA — KOMPAKTNI PADAJUĆI MENI
+
+
+
+
+
+
+
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-dropdown-row {
+
+
+
+
+
+
+
+  display: grid;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  grid-template-columns:
+
+
+
+
+
+
+
+    repeat(2, minmax(0, 1fr));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  gap: 14px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  width: 100%;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-dropdown {
+
+
+
+
+
+
+
+  position: relative;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  width: 100%;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-dropdown-label {
+
+
+
+
+
+
+
+  display: block;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  margin-bottom: 6px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #43514b;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-size: 14px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-weight: 800;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GLAVNI PADAJUĆI ELEMENT */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-select {
+
+
+
+
+
+
+
+  position: relative;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  width: 100%;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-select summary {
+
+
+
+
+
+
+
+  width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  min-height: 44px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  padding: 9px 12px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  display: flex;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  align-items: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  justify-content: space-between;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  gap: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #17231f;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border:
+
+
+
+
+
+
+
+    1px solid #cbdad4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border-radius: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-size: 14px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-weight: 800;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  cursor: pointer;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  list-style: none;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  user-select: none;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-select summary::-webkit-details-marker {
+
+
+
+
+
+
+
+  display: none;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-select summary:hover {
+
+
+
+
+
+
+
+  border-color: var(--green);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background: #f8fbfa;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-select[open] summary {
+
+
+
+
+
+
+
+  border-color: var(--green);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border-bottom-left-radius: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border-bottom-right-radius: 0;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-select-arrow {
+
+
+
+
+
+
+
+  flex:
+
+
+
+
+
+
+
+    0 0 auto;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: var(--green);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-size: 11px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OPCIJE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-select-options {
+
+
+
+
+
+
+
+  position: absolute;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  left: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  right: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  top: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  z-index: 9999;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  overflow: hidden;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border:
+
+
+
+
+
+
+
+    1px solid #cbdad4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border-top: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border-radius:
+
+
+
+
+
+
+
+    0 0 10px 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  box-shadow:
+
+
+
+
+
+
+
+    0 8px 22px
+
+
+
+
+
+
+
+    rgba(0, 0, 0, 0.18);
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* POJEDINAČNA OPCIJA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-select-options button {
+
+
+
+
+
+
+
+  width: 100%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  min-height: 42px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  padding: 9px 12px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border-bottom:
+
+
+
+
+
+
+
+    1px solid #e5ece9;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border-radius: 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background: #ffffff;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #17231f;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  text-align: left;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font: inherit;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-size: 14px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-weight: 650;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  cursor: pointer;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-select-options button:last-child {
+
+
+
+
+
+
+
+  border-bottom: 0;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-select-options button:hover {
+
+
+
+
+
+
+
+  background: #e7f3ef;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-select-options button.selected {
+
+
+
+
+
+
+
+  background: #eef6f2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: var(--green-dark);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-weight: 800;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .daily-dropdown-row {
+
+
+
+
+
+
+
+    grid-template-columns: 1fr;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    gap: 10px;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+
+
+
+
+   POPRAVKA DROPDOWNA - ZAVRŠNA VERZIJA
+
+
+
+
+
+
+
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-dropdown,
+
+
+
+
+
+
+
+.custom-dropdown {
+
+
+
+
+
+
+
+  position: relative !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-dropdown-menu,
+
+
+
+
+
+
+
+.custom-dropdown-menu {
+
+
+
+
+
+
+
+  display: none !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  position: absolute !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  top: calc(100% + 4px) !important;
+
+
+
+
+
+
+
+  left: 0 !important;
+
+
+
+
+
+
+
+  right: 0 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  width: 100% !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  z-index: 99999 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  flex-direction: column !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background: #ffffff !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border: 1px solid #b8d0c8 !important;
+
+
+
+
+
+
+
+  border-radius: 12px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25) !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  overflow: hidden !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-dropdown-menu.open,
+
+
+
+
+
+
+
+.custom-dropdown-menu.open {
+
+
+
+
+
+
+
+  display: flex !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-dropdown-menu button,
+
+
+
+
+
+
+
+.custom-dropdown-menu button {
+
+
+
+
+
+
+
+  display: block !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  width: 100% !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  min-height: 43px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  margin: 0 !important;
+
+
+
+
+
+
+
+  padding: 10px 14px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  box-sizing: border-box !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border: 0 !important;
+
+
+
+
+
+
+
+  border-bottom: 1px solid #e2eae7 !important;
+
+
+
+
+
+
+
+  border-radius: 0 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background: #ffffff !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #111111 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-size: 15px !important;
+
+
+
+
+
+
+
+  font-weight: 700 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  text-align: center !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  cursor: pointer !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-dropdown-menu button:last-child,
+
+
+
+
+
+
+
+.custom-dropdown-menu button:last-child {
+
+
+
+
+
+
+
+  border-bottom: 0 !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-dropdown-menu button:hover,
+
+
+
+
+
+
+
+.custom-dropdown-menu button:hover {
+
+
+
+
+
+
+
+  background: #edf6f2 !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.daily-dropdown-menu button.selected,
+
+
+
+
+
+
+
+.custom-dropdown-menu button.selected {
+
+
+
+
+
+
+
+  background: #e5f2ed !important;
+
+
+
+
+
+
+
+  color: #173f32 !important;
+
+
+
+
+
+
+
+  font-weight: 800 !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Glavno dugme dropdowna */
+
+
+
+
+
+
+
+.daily-dropdown-button,
+
+
+
+
+
+
+
+.custom-dropdown-button {
+
+
+
+
+
+
+
+  position: relative !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  display: flex !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  align-items: center !important;
+
+
+
+
+
+
+
+  justify-content: center !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  width: 100% !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  min-height: 44px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  box-sizing: border-box !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background: #ffffff !important;
+
+
+
+
+
+
+
+  color: #111111 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border: 1px solid #9fc4b8 !important;
+
+
+
+
+
+
+
+  border-radius: 12px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-size: 15px !important;
+
+
+
+
+
+
+
+  font-weight: 800 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  cursor: pointer !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropdown-arrow {
+
+
+
+
+
+
+
+  margin-left: 6px !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Da otvoreni meni ne utiče na raspored Namaza/Droplowna ispod */
+
+
+
+
+
+
+
+.daily-dropdown-menu,
+
+
+
+
+
+
+
+.custom-dropdown-menu {
+
+
+
+
+
+
+
+  height: auto !important;
+
+
+
+
+
+
+
+  max-height: 260px !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Na telefonu */
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .daily-dropdown-menu,
+
+
+
+
+
+
+
+  .custom-dropdown-menu {
+
+
+
+
+
+
+
+    max-height: 260px !important;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* LJEPŠI PRIKAZ DATUMA */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#daily-date,
+
+
+
+
+
+
+
+#monthly-month {
+
+
+
+
+
+
+
+  height: 46px !important;
+
+
+
+
+
+
+
+  box-sizing: border-box !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  padding: 0 13px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background: rgba(255, 255, 255, 0.95) !important;
+
+
+
+
+
+
+
+  color: #17231f !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border: 1px solid #b8d0c8 !important;
+
+
+
+
+
+
+
+  border-radius: 12px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-family: Arial, sans-serif !important;
+
+
+
+
+
+
+
+  font-size: 16px !important;
+
+
+
+
+
+
+
+  font-weight: 700 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  letter-spacing: 0.4px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  text-align: left !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Datum na telefonu */
+
+
+
+
+
+
+
+#daily-date {
+
+
+
+
+
+
+
+  min-width: 0 !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ikonica kalendara */
+
+
+
+
+
+
+
+#daily-date::-webkit-calendar-picker-indicator {
+
+
+
+
+
+
+
+  width: 18px !important;
+
+
+
+
+
+
+
+  height: 18px !important;
+
+
+
+
+
+
+
+  cursor: pointer !important;
+
+
+
+
+
+
+
+  opacity: 0.8 !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+
+
+
+
+   EVIDENCIJA - UREDNIJA DUGMAD
+
+
+
+
+
+
+
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.records-menu {
+
+
+
+
+
+
+
+  display: flex !important;
+
+
+
+
+
+
+
+  flex-direction: column !important;
+
+
+
+
+
+
+
+  gap: 10px !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.records-menu-button {
+
+
+
+
+
+
+
+  width: 100% !important;
+
+
+
+
+
+
+
+  min-height: 78px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  padding: 13px 18px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  display: flex !important;
+
+
+
+
+
+
+
+  flex-direction: column !important;
+
+
+
+
+
+
+
+  align-items: center !important;
+
+
+
+
+
+
+
+  justify-content: center !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  gap: 5px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  box-sizing: border-box !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background: rgba(255, 255, 255, 0.93) !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border: 1px solid #c7d8d2 !important;
+
+
+
+
+
+
+
+  border-radius: 12px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #17231f !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  text-align: center !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  cursor: pointer !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NASLOV */
+
+
+
+
+
+
+
+.records-menu-button strong {
+
+
+
+
+
+
+
+  display: block !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  margin: 0 !important;
+
+
+
+
+
+
+
+  padding: 0 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #17382e !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-family: Arial, sans-serif !important;
+
+
+
+
+
+
+
+  font-size: 17px !important;
+
+
+
+
+
+
+
+  font-weight: 800 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  line-height: 1.2 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  letter-spacing: 0.1px !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OPIS */
+
+
+
+
+
+
+
+.records-menu-button span {
+
+
+
+
+
+
+
+  display: block !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  margin: 0 !important;
+
+
+
+
+
+
+
+  padding: 0 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #4b5b55 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-family: Arial, sans-serif !important;
+
+
+
+
+
+
+
+  font-size: 14px !important;
+
+
+
+
+
+
+
+  font-weight: 500 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+ /* =========================================================
+
+
+
+
+
+
+
+   EVIDENCIJA — TIPOGRAFIJA KAO NASLOV
+
+
+
+
+
+
+
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.records-menu-button {
+
+
+
+
+
+
+
+  width: 100% !important;
+
+
+
+
+
+
+
+  min-height: 82px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  padding: 12px 16px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  display: flex !important;
+
+
+
+
+
+
+
+  flex-direction: column !important;
+
+
+
+
+
+
+
+  align-items: center !important;
+
+
+
+
+
+
+
+  justify-content: center !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  gap: 5px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  box-sizing: border-box !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background: rgba(255, 255, 255, 0.94) !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border: 1px solid #cbd8d4 !important;
+
+
+
+
+
+
+
+  border-radius: 12px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #111111 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  text-align: center !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-family: Arial, sans-serif !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  cursor: pointer !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GLAVNI NASLOV */
+
+
+
+
+
+
+
+.records-menu-button strong {
+
+
+
+
+
+
+
+  display: block !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  margin: 0 !important;
+
+
+
+
+
+
+
+  padding: 0 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #111111 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-family: Arial, sans-serif !important;
+
+
+
+
+
+
+
+  font-size: 17px !important;
+
+
+
+
+
+
+
+  font-weight: 900 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  line-height: 1.15 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  letter-spacing: 0 !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OPIS */
+
+
+
+
+
+
+
+.records-menu-button span {
+
+
+
+
+
+
+
+  display: block !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  margin: 0 !important;
+
+
+
+
+
+
+
+  padding: 0 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #111111 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-family: Arial, sans-serif !important;
+
+
+
+
+
+
+
+  font-size: 15px !important;
+
+
+
+
+
+
+
+  font-weight: 400 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  line-height: 1.25 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  letter-spacing: 0 !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBITEL */
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .records-menu-button {
+
+
+
+
+
+
+
+    min-height: 78px !important;
+
+
+
+
+
+
+
+    padding: 11px 14px !important;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .records-menu-button strong {
+
+
+
+
+
+
+
+    font-size: 17px !important;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .records-menu-button span {
+
+
+
+
+
+
+
+    font-size: 14px !important;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+
+
+
+
+   IZBOR RAZREDA — UREDAN PRIKAZ
+
+
+
+
+
+
+
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grade-grid {
+
+
+
+
+
+
+
+  display: grid !important;
+
+
+
+
+
+
+
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+
+
+
+
+
+
+  gap: 14px !important;
+
+
+
+
+
+
+
+  width: 100% !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grade-button {
+
+
+
+
+
+
+
+  width: 100% !important;
+
+
+
+
+
+
+
+  min-height: 90px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  padding: 14px 10px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  display: flex !important;
+
+
+
+
+
+
+
+  flex-direction: column !important;
+
+
+
+
+
+
+
+  align-items: center !important;
+
+
+
+
+
+
+
+  justify-content: center !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  gap: 6px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  box-sizing: border-box !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  background: rgba(255, 255, 255, 0.94) !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  border: 1px solid #cbd8d4 !important;
+
+
+
+
+
+
+
+  border-radius: 12px !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #111111 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  text-align: center !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-family: Arial, sans-serif !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  cursor: pointer !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1. RAZRED */
+
+
+
+
+
+
+
+.grade-button strong {
+
+
+
+
+
+
+
+  display: block !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  margin: 0 !important;
+
+
+
+
+
+
+
+  padding: 0 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #111111 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-family: Arial, sans-serif !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-size: 16px !important;
+
+
+
+
+
+
+
+  font-weight: 900 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  line-height: 1.15 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  letter-spacing: 0 !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BROJ UČENIKA */
+
+
+
+
+
+
+
+.grade-button span {
+
+
+
+
+
+
+
+  display: block !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  margin: 0 !important;
+
+
+
+
+
+
+
+  padding: 0 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  color: #111111 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-family: Arial, sans-serif !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  font-size: 14px !important;
+
+
+
+
+
+
+
+  font-weight: 400 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  line-height: 1.2 !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  letter-spacing: 0 !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EFEKAT KLIKA / MIŠA */
+
+
+
+
+
+
+
+.grade-button:hover {
+
+
+
+
+
+
+
+  background: rgba(255, 255, 255, 0.99) !important;
+
+
+
+
+
+
+
+  border-color: #9fbdb3 !important;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grade-button:active {
+
+
+
+
+
+
+
+  transform: scale(0.98);
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBITEL */
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .grade-grid {
+
+
+
+
+
+
+
+    gap: 12px !important;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .grade-button {
+
+
+
+
+
+
+
+    min-height: 88px !important;
+
+
+
+
+
+
+
+    padding: 13px 8px !important;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .grade-button strong {
+
+
+
+
+
+
+
+    font-size: 16px !important;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .grade-button span {
+
+
+
+
+
+
+
+    font-size: 14px !important;
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+
+
+
+
+   UREĐIVANJE POSTAVKI
+
+
+
+
+
+
+
+   ========================================================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.settings-page {
+
+
+
+
+
+
+
+  display: flex;
+
+
+
+
+
+
+
+  flex-direction: column;
+
+
+
+
+
+
+
+  gap: 14px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.settings-card {
+
+
+
+
+
+
+
+  padding: 18px 16px;
+
+
+
+
+
+
+
+  margin-bottom: 0;
+
+
+
+
+
+
+
+  border-radius: 16px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.settings-card h2 {
+
+
+
+
+
+
+
+  margin: 0 0 10px;
+
+
+
+
+
+
+
+  font-size: 27px;
+
+
+
+
+
+
+
+  line-height: 1.2;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.settings-card p {
+
+
+
+
+
+
+
+  margin: 0 0 14px;
+
+
+
+
+
+
+
+  line-height: 1.45;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.settings-actions {
+
+
+
+
+
+
+
+  display: flex;
+
+
+
+
+
+
+
+  flex-direction: column;
+
+
+
+
+
+
+
+  gap: 8px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.setting-row {
+
+
+
+
+
+
+
+  display: flex;
+
+
+
+
+
+
+
+  flex-direction: column;
+
+
+
+
+
+
+
+  gap: 10px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.setting-row > div {
+
+
+
+
+
+
+
+  line-height: 1.4;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.setting-row span {
+
+
+
+
+
+
+
+  margin-left: 4px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.setting-info {
+
+
+
+
+
+
+
+  display: flex;
+
+
+
+
+
+
+
+  flex-direction: column;
+
+
+
+
+
+
+
+  gap: 5px;
+
+
+
+
+
+
+
+  line-height: 1.35;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.settings-card p {
+
+
+
+
+
+
+
+  margin-bottom: 18px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.settings-actions {
+
+
+
+
+
+
+
+  gap: 10px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.setting-row {
+
+
+
+
+
+
+
+  display: flex;
+
+
+
+
+
+
+
+  flex-direction: column;
+
+
+
+
+
+
+
+  gap: 20px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.current-school-year {
+
+
+
+
+
+
+
+  margin-top: 15px;
+
+
+
+
+
+
+
+  margin-bottom: 15px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+.setting-info {
+
+
+
+
+
+
+
+  gap: 8px;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.school-year-card {
+
+
+
+
+
+
+
+  width: 100%;
+
+
+
+
+
+
+
+  box-sizing: border-box;
+
+
+
+
+
+
+
+  padding: 11px 16px;
+
+
+
+
+
+
+
+  border: 1px solid #b7d4cd;
+
+
+
+
+
+
+
+  border-radius: 12px;
+
+
+
+
+
+
+
+  background: rgba(255, 255, 255, 0.85);
+
+
+
+
+
+
+
+  display: flex;
+
+
+
+
+
+
+
+  flex-direction: row;
+
+
+
+
+
+
+
+  align-items: center;
+
+
+
+
+
+
+
+  justify-content: center;
+
+
+
+
+
+
+
+  gap: 6px;
+
+
+
+
+
+
+
+  line-height: 1.2;
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   POSTAVKE — ZAVRŠNI RASPORED
+
+
+
+   ========================================================= */
+
+
+
+
+
+
+
+.settings-page {
+
+
+
+  gap: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud {
+
+
+
+  background: rgba(255, 255, 255, 0.94);
+
+
+
+  color: #17231f;
+
+
+
+  border: 1px solid rgba(255, 255, 255, 0.80);
+
+
+
+  border-radius: 18px;
+
+
+
+  padding: 16px;
+
+
+
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud .settings-card {
+
+
+
+  width: 100%;
+
+
+
+  background: transparent;
+
+
+
+  border: 0;
+
+
+
+  box-shadow: none;
+
+
+
+  border-radius: 12px;
+
+
+
+  padding: 14px 12px;
+
+
+
+  margin: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud .settings-card + .settings-card {
+
+
+
+  margin-top: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud .settings-card h2 {
+
+
+
+  color: #17231f;
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud .settings-card p {
+
+
+
+  color: #33413c;
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud .settings-actions {
+
+
+
+  gap: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud .settings-actions button,
+
+
+
+.settings-cloud .current-school-year-card,
+
+
+
+.settings-cloud .advance-year-card {
+
+
+
+  width: 100%;
+
+
+
+  box-sizing: border-box;
+
+
+
+  border: 1px solid #c7d8d2;
+
+
+
+  border-radius: 12px;
+
+
+
+  background: rgba(255, 255, 255, 0.88);
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud .settings-actions button {
+
+
+
+  min-height: 48px;
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud .current-school-year-card {
+
+
+
+  padding: 11px 12px;
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud .current-school-year-card .school-year-card {
+
+
+
+  width: 100%;
+
+
+
+  box-sizing: border-box;
+
+
+
+  padding: 0;
+
+
+
+  border: 0;
+
+
+
+  border-radius: 0;
+
+
+
+  background: transparent;
+
+
+
+  display: flex;
+
+
+
+  flex-direction: row;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  gap: 6px;
+
+
+
+  line-height: 1.2;
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud .advance-year-card {
+
+
+
+  padding: 0;
+
+
+
+  overflow: hidden;
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud .advance-year-card .primary-button {
+
+
+
+  width: 100%;
+
+
+
+  min-height: 48px;
+
+
+
+  border: 0;
+
+
+
+  border-radius: 11px;
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud .app-info-card {
+
+
+
+  padding: 12px;
+
+
+
+  border: 0;
+
+
+
+  background: transparent;
+
+
+
+}
+
+
+
+
+
+
+
+.settings-cloud .app-info-card h2 {
+
+
+
+  margin-bottom: 10px;
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+
+
+  .settings-cloud {
+
+
+
+    padding: 10px;
+
+
+
+    border-radius: 16px;
+
+
+
+  }
+
+
+
+
+
+
+
+  .settings-cloud .settings-card {
+
+
+
+    padding: 12px 8px;
+
+
+
+  }
+
+
+
+
+
+
+
+  .settings-cloud .settings-card + .settings-card {
+
+
+
+    margin-top: 8px;
+
+
+
+  }
+
+
+
+
+
+
+
+  .settings-cloud .current-school-year-card {
+
+
+
+    padding: 10px 8px;
+
+
+
+  }
+
+
+
+}
+
+
+
+
+
+
+
+/* Okvir trenutne skolske godine - isti vizuelni stil kao ostala dugmad */
+
+
+
+.current-school-year-frame {
+
+
+
+  width: 100%;
+
+
+
+  box-sizing: border-box;
+
+
+
+  min-height: 42px;
+
+
+
+  padding: 10px 16px;
+
+
+
+  border: 1px solid #cbdad4;
+
+
+
+  border-radius: 11px;
+
+
+
+  background: #ffffff;
+
+
+
+  color: #17231f;
+
+
+
+  font-weight: 650;
+
+
+
+  display: flex;
+
+
+
+  flex-direction: row;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: center;
+
+
+
+  gap: 6px;
+
+
+
+  line-height: 1.2;
+
+
+
+}
+
+
+
+
+
+
+
+/* POSTAVKE: okvir trenutne školske godine */
+
+
+
+.settings-page .current-school-year-frame {
+
+
+
+  width: 100% !important;
+
+
+
+  box-sizing: border-box !important;
+
+
+
+  min-height: 42px !important;
+
+
+
+  padding: 10px 16px !important;
+
+
+
+  margin: 0 !important;
+
+
+
+  border: 1px solid #c7d8d2 !important;
+
+
+
+  border-radius: 12px !important;
+
+
+
+  background: rgba(255, 255, 255, 0.88) !important;
+
+
+
+  color: #17231f !important;
+
+
+
+  font-weight: 650 !important;
+
+
+
+  display: flex !important;
+
+
+
+  flex-direction: row !important;
+
+
+
+  align-items: center !important;
+
+
+
+  justify-content: center !important;
+
+
+
+  gap: 6px !important;
+
+
+
+  line-height: 1.2 !important;
+
+
+
+}
+
+
+
+/* OKVIR TRENUTNE ŠKOLSKE GODINE */
+
+
+
+.settings-cloud .current-school-year-frame {
+
+
+
+  width: 100% !important;
+
+
+
+  box-sizing: border-box !important;
+
+
+
+  min-height: 42px !important;
+
+
+
+
+
+
+
+  /* prostor oko okvira da se jasno odvoji od prethodne i sljedeće kartice */
+
+
+
+  margin: 10px 0 !important;
+
+
+
+
+
+
+
+  padding: 10px 16px !important;
+
+
+
+
+
+
+
+  border: 1px solid #c7d8d2 !important;
+
+
+
+  border-radius: 12px !important;
+
+
+
+
+
+
+
+  background: #ffffff !important;
+
+
+
+  color: #17231f !important;
+
+
+
+
+
+
+
+  font-weight: 650 !important;
+
+
+
+
+
+
+
+  display: flex !important;
+
+
+
+  flex-direction: row !important;
+
+
+
+  align-items: center !important;
+
+
+
+  justify-content: center !important;
+
+
+
+
+
+
+
+  gap: 6px !important;
+
+
+
+  line-height: 1.2 !important;
+
+
+
+}
+
+
+
+.settings-cloud .settings-card.current-school-year-frame {
+
+
+
+  width: 100% !important;
+
+
+
+  box-sizing: border-box !important;
+
+
+
+  min-height: 48px !important;
+
+
+
+  margin: 10px 0 !important;
+
+
+
+  padding: 10px 12px !important;
+
+
+
+
+
+
+
+  border: 1px solid #c7d8d2 !important;
+
+
+
+  border-radius: 12px !important;
+
+
+
+
+
+
+
+  background: #ffffff !important;
+
+
+
+  color: #17231f !important;
+
+
+
+
+
+
+
+  display: flex !important;
+
+
+
+  align-items: center !important;
+
+
+
+  justify-content: center !important;
+
+
+
+  gap: 6px !important;
+
+
+
+
+
+
+
+  line-height: 1.2 !important;
+
+
+
+}
+
+
+
+.settings-cloud .current-school-year-frame {
+
+
+
+  width: 100% !important;
+
+
+
+  box-sizing: border-box !important;
+
+
+
+
+
+
+
+  min-height: 48px !important;
+
+
+
+
+
+
+
+  margin: 10px 0 !important;
+
+
+
+  padding: 10px 12px !important;
+
+
+
+
+
+
+
+  border: 1px solid #c7d8d2 !important;
+
+
+
+  border-radius: 12px !important;
+
+
+
+
+
+
+
+  background: #ffffff !important;
+
+
+
+  color: #17231f !important;
+
+
+
+
+
+
+
+  display: flex !important;
+
+
+
+  align-items: center !important;
+
+
+
+  justify-content: center !important;
+
+
+
+
+
+
+
+  gap: 6px !important;
+
+
+
+  line-height: 1.2 !important;
+
+
+
+}
+
+
+
+/* POSTAVKE — trenutna školska godina unutar zajedničkog bloka */
+
+.settings-cloud .advance-year-card .school-year-current {
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  min-height: 48px;
+
+  padding: 10px 12px;
+
+  border-bottom: 1px solid #c7d8d2;
+
+  background: rgba(255, 255, 255, 0.88);
+
+  color: #17231f;
+
+  display: flex;
 
   align-items: center;
 
   justify-content: center;
 
-  min-height: 30px;
+  gap: 6px;
 
-  padding: 4px 10px;
-
-  border-radius: 999px;
-
-  font-size: 13px;
-
-  font-weight: 800;
-}
-.saved {
-  color: #176b57;
-
-  background: #e7f3ef;
-
-  border-radius: 999px;
-
-  padding: 6px 10px;
-
-  font-weight: 700;
-}
-
-
-/* =========================================================
-   DONJA NAVIGACIJA
-   ========================================================= */
-
-.footer-actions {
-  display: flex;
-
-  justify-content: space-between;
-
-  gap: 10px;
-
-  margin-top: 18px;
-}
-
-.footer-actions button {
-  min-width: 120px;
-}
-
-
-/* =========================================================
-   MOBITEL
-   ========================================================= */
-
-@media (max-width: 800px) {
-
-  body {
-    background-position: center center;
-
-    background-attachment: fixed;
-  }
-
-  .app-shell {
-    width:
-      min(
-        calc(100% - 24px),
-        430px
-      );
-
-    padding:
-      18px 0 35px;
-  }
-
-  .topbar {
-    padding: 70px 10px 12px;
-
-    margin-bottom: 8px;
-  }
-
-  .brand-title {
-    font-size: 24px;
-
-    line-height: 1.12;
-  }
-
-  .school-year-title {
-    font-size: 15px;
-
-    margin-top: 7px;
-  }
-
-  .main-nav {
-    grid-template-columns:
-      repeat(2, 1fr);
-
-    gap: 8px;
-
-    margin-top: 15px;
-  }
-
-  .main-nav button {
-    min-height: 44px;
-
-    font-size: 13px;
-
-    padding:
-      8px 5px;
-  }
-
-  .welcome {
-    padding:
-      18px 4px 25px;
-  }
-
-  .welcome-date {
-    font-size: 16px;
-  }
-
-  .section-intro {
-    font-size: 14px;
-
-    margin-bottom: 13px;
-  }
-
-  .prayer-home-grid {
-    grid-template-columns:
-      1fr;
-
-    gap: 8px;
-
-    max-width: 360px;
-  }
-
-  .prayer-home-button {
-    min-height: 52px;
-
-    font-size: 15px;
-  }
-
-  .prayer-grid,
-  .prayers {
-    grid-template-columns:
-      repeat(2, 1fr);
-  }
-
-  .prayer-grid button:last-child,
-  .prayers button:last-child {
-    grid-column:
-      1 / -1;
-  }
-
-  .grade-grid,
-  .grades,
-  .grade-cards {
-    grid-template-columns:
-      repeat(2, 1fr);
-  }
-
-  .status-grid,
-  .status-buttons {
-    grid-template-columns:
-      repeat(2, 1fr);
-  }
-
-  main section:not(.welcome) {
-    padding: 16px;
-  }
-
-}
-
-
-/* =========================================================
-   MALI MOBITEL
-   ========================================================= */
-
-@media (max-width: 480px) {
-
-  body {
-    background-position:
-      center center;
-  }
-
-  .app-shell {
-    width:
-      calc(100% - 20px);
-
-    padding-top: 12px;
-  }
-
-  .brand-title {
-    font-size: 21px;
-
-    line-height: 1.13;
-  }
-
-  .school-year-title {
-    font-size: 14px;
-  }
-
-  .main-nav {
-    gap: 7px;
-  }
-
-  .main-nav button {
-    min-height: 42px;
-
-    font-size: 12px;
-
-    border-radius: 10px;
-  }
-
-  .welcome-date {
-    font-size: 15px;
-  }
-
-  .section-intro {
-    font-size: 13px;
-
-    line-height: 1.35;
-  }
-
-  .prayer-home-grid {
-    max-width: 100%;
-
-    gap: 7px;
-  }
-
-  .prayer-home-button {
-    min-height: 49px;
-
-    font-size: 14px;
-
-    border-radius: 11px;
-  }
-
-  button {
-    width: 100%;
-  }
-
-  .footer-actions {
-    flex-direction: column;
-  }
-
-}
-
-
-/* =========================================================
-   DESKTOP
-   ========================================================= */
-
-@media (min-width: 801px) {
-
-  .brand-title {
-    font-size: 34px;
-  }
-
-  .school-year-title {
-    font-size: 17px;
-  }
-
-  .welcome {
-    padding-top: 32px;
-  }
-
-  .welcome-date {
-    font-size: 19px;
-  }
-
-  .section-intro {
-    font-size: 17px;
-  }
-
-}
-
-
-/* =========================================================
-   NAZIV MEDRESE
-   ========================================================= */
-
-.medresa-caption {
-  position: relative;
-
-  margin-top: 25px;
-
-  padding: 12px 10px;
-
-  text-align: center;
-
-  color: #ffffff;
-
-  font-size: 23px;
-
-  font-weight: 900;
-
-  letter-spacing: 0.2px;
-
-  text-shadow:
-    0 2px 7px rgba(0, 0, 0, 0.9);
-
-  z-index: 2;
-}
-
-@media (max-width: 600px) {
-
-  .medresa-caption {
-    font-size: 17px;
-    padding-bottom: 20px;
-  }
-
-}
-
-
-/* =========================================================
-   DNEVNA EVIDENCIJA — KOMPAKTNI PADAJUĆI MENI
-   ========================================================= */
-
-.daily-dropdown-row {
-  display: grid;
-
-  grid-template-columns:
-    repeat(2, minmax(0, 1fr));
-
-  gap: 14px;
-
-  width: 100%;
-}
-
-.daily-dropdown {
-  position: relative;
-
-  width: 100%;
-}
-
-.daily-dropdown-label {
-  display: block;
-
-  margin-bottom: 6px;
-
-  color: #43514b;
-
-  font-size: 14px;
-
-  font-weight: 800;
-}
-
-
-/* GLAVNI PADAJUĆI ELEMENT */
-
-.daily-select {
-  position: relative;
-
-  width: 100%;
-}
-
-.daily-select summary {
-  width: 100%;
-
-  min-height: 44px;
-
-  padding: 9px 12px;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  gap: 10px;
-
-  background: #ffffff;
-
-  color: #17231f;
-
-  border:
-    1px solid #cbdad4;
-
-  border-radius: 10px;
-
-  font-size: 14px;
-
-  font-weight: 800;
-
-  cursor: pointer;
-
-  list-style: none;
-
-  user-select: none;
-}
-
-.daily-select summary::-webkit-details-marker {
-  display: none;
-}
-
-.daily-select summary:hover {
-  border-color: var(--green);
-
-  background: #f8fbfa;
-}
-
-.daily-select[open] summary {
-  border-color: var(--green);
-
-  border-bottom-left-radius: 0;
-
-  border-bottom-right-radius: 0;
-}
-
-.daily-select-arrow {
-  flex:
-    0 0 auto;
-
-  color: var(--green);
-
-  font-size: 11px;
-}
-
-
-/* OPCIJE */
-
-.daily-select-options {
-  position: absolute;
-
-  left: 0;
-
-  right: 0;
-
-  top: 100%;
-
-  z-index: 9999;
-
-  overflow: hidden;
-
-  background: #ffffff;
-
-  border:
-    1px solid #cbdad4;
-
-  border-top: 0;
-
-  border-radius:
-    0 0 10px 10px;
-
-  box-shadow:
-    0 8px 22px
-    rgba(0, 0, 0, 0.18);
-}
-
-
-/* POJEDINAČNA OPCIJA */
-
-.daily-select-options button {
-  width: 100%;
-
-  min-height: 42px;
-
-  padding: 9px 12px;
-
-  border: 0;
-
-  border-bottom:
-    1px solid #e5ece9;
-
-  border-radius: 0;
-
-  background: #ffffff;
-
-  color: #17231f;
-
-  text-align: left;
-
-  font: inherit;
-
-  font-size: 14px;
+  line-height: 1.2;
 
   font-weight: 650;
 
-  cursor: pointer;
+}
+.settings-cloud .current-school-year-card {
+  padding: 0;
 }
 
-.daily-select-options button:last-child {
-  border-bottom: 0;
+.settings-cloud .current-school-year-button {
+  width: 100%;
+  min-height: 48px;
+  border: 0;
+  border-radius: 11px;
+  background: transparent;
+  color: #17231f;
+}
+.settings-cloud .current-school-year-card {
+  padding: 0;
 }
 
-.daily-select-options button:hover {
-  background: #e7f3ef;
+.settings-cloud .current-school-year-button {
+  width: 100%;
+  min-height: 48px;
+  border: 0;
+  border-radius: 11px;
+  background: transparent;
+  color: #17231f;
+}
+.settings-cloud .current-school-year-card {
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
-.daily-select-options button.selected {
-  background: #eef6f2;
-
-  color: var(--green-dark);
-
-  font-weight: 800;
+.settings-cloud .current-school-year-button {
+  width: 100%;
+  min-height: 64px;
+  border: 1px solid #c7d8d2;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #17231f;
+}
+.settings-cloud .advance-year-card .primary-button:hover {
+  background: #ffffff;
+  border-color: #c7d8d2;
 }
 
 
-@media (max-width: 600px) {
+/* POSTAVKE — ujednačena dugmad */
 
-  .daily-dropdown-row {
-    grid-template-columns: 1fr;
-
-    gap: 10px;
-  }
-
-}
-/* =========================================================
-   POPRAVKA DROPDOWNA - ZAVRŠNA VERZIJA
-   ========================================================= */
-
-.daily-dropdown,
-.custom-dropdown {
-  position: relative !important;
+.settings-cloud .settings-actions button,
+.settings-cloud .current-school-year-button,
+.settings-cloud .advance-year-card .primary-button {
+  height: 52px;
+  min-height: 52px;
+  padding: 4px 12px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.daily-dropdown-menu,
-.custom-dropdown-menu {
-  display: none !important;
-
-  position: absolute !important;
-
-  top: calc(100% + 4px) !important;
-  left: 0 !important;
-  right: 0 !important;
-
-  width: 100% !important;
-
-  z-index: 99999 !important;
-
-  flex-direction: column !important;
-
-  background: #ffffff !important;
-
-  border: 1px solid #b8d0c8 !important;
-  border-radius: 12px !important;
-
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25) !important;
-
-  overflow: hidden !important;
+.settings-cloud .current-school-year-card,
+.settings-cloud .advance-year-card {
+  width: calc(100% - 24px);
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+/* Poravnanje zaglavlja Postavki sa sadržajem kartice */
+.page-head:has(+ .settings-page) {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.daily-dropdown-menu.open,
-.custom-dropdown-menu.open {
-  display: flex !important;
-}
-
-.daily-dropdown-menu button,
-.custom-dropdown-menu button {
-  display: block !important;
-
-  width: 100% !important;
-
-  min-height: 43px !important;
-
-  margin: 0 !important;
-  padding: 10px 14px !important;
-
-  box-sizing: border-box !important;
-
-  border: 0 !important;
-  border-bottom: 1px solid #e2eae7 !important;
-  border-radius: 0 !important;
-
-  background: #ffffff !important;
-
-  color: #111111 !important;
-
-  font-size: 15px !important;
-  font-weight: 700 !important;
-
-  text-align: center !important;
-
-  cursor: pointer !important;
-}
-
-.daily-dropdown-menu button:last-child,
-.custom-dropdown-menu button:last-child {
-  border-bottom: 0 !important;
-}
-
-.daily-dropdown-menu button:hover,
-.custom-dropdown-menu button:hover {
-  background: #edf6f2 !important;
-}
-
-.daily-dropdown-menu button.selected,
-.custom-dropdown-menu button.selected {
-  background: #e5f2ed !important;
-  color: #173f32 !important;
-  font-weight: 800 !important;
-}
-
-/* Glavno dugme dropdowna */
-.daily-dropdown-button,
-.custom-dropdown-button {
-  position: relative !important;
-
-  display: flex !important;
-
-  align-items: center !important;
-  justify-content: center !important;
-
-  width: 100% !important;
-
-  min-height: 44px !important;
-
-  box-sizing: border-box !important;
-
-  background: #ffffff !important;
-  color: #111111 !important;
-
-  border: 1px solid #9fc4b8 !important;
-  border-radius: 12px !important;
-
-  font-size: 15px !important;
-  font-weight: 800 !important;
-
-  cursor: pointer !important;
-}
-
-.dropdown-arrow {
-  margin-left: 6px !important;
-}
-
-/* Da otvoreni meni ne utiče na raspored Namaza/Droplowna ispod */
-.daily-dropdown-menu,
-.custom-dropdown-menu {
-  height: auto !important;
-  max-height: 260px !important;
-}
-
-/* Na telefonu */
-@media (max-width: 700px) {
-
-  .daily-dropdown-menu,
-  .custom-dropdown-menu {
-    max-height: 260px !important;
-  }
-
-}
-/* LJEPŠI PRIKAZ DATUMA */
-
-#daily-date,
-#monthly-month {
-  height: 46px !important;
-  box-sizing: border-box !important;
-
-  padding: 0 13px !important;
-
-  background: rgba(255, 255, 255, 0.95) !important;
-  color: #17231f !important;
-
-  border: 1px solid #b8d0c8 !important;
-  border-radius: 12px !important;
-
-  font-family: Arial, sans-serif !important;
-  font-size: 16px !important;
-  font-weight: 700 !important;
-
-  letter-spacing: 0.4px !important;
-
-  text-align: left !important;
-}
-
-/* Datum na telefonu */
-#daily-date {
-  min-width: 0 !important;
-}
-
-/* Ikonica kalendara */
-#daily-date::-webkit-calendar-picker-indicator {
-  width: 18px !important;
-  height: 18px !important;
-  cursor: pointer !important;
-  opacity: 0.8 !important;
-}
-/* =========================================================
-   EVIDENCIJA - UREDNIJA DUGMAD
-   ========================================================= */
-
-.records-menu {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 10px !important;
-}
-
-.records-menu-button {
-  width: 100% !important;
-  min-height: 78px !important;
-
-  padding: 13px 18px !important;
-
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-
-  gap: 5px !important;
-
-  box-sizing: border-box !important;
-
-  background: rgba(255, 255, 255, 0.93) !important;
-
-  border: 1px solid #c7d8d2 !important;
-  border-radius: 12px !important;
-
-  color: #17231f !important;
-
-  text-align: center !important;
-
-  cursor: pointer !important;
-}
-
-/* NASLOV */
-.records-menu-button strong {
-  display: block !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  color: #17382e !important;
-
-  font-family: Arial, sans-serif !important;
-  font-size: 17px !important;
-  font-weight: 800 !important;
-
-  line-height: 1.2 !important;
-
-  letter-spacing: 0.1px !important;
-}
-
-/* OPIS */
-.records-menu-button span {
-  display: block !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  color: #4b5b55 !important;
-
-  font-family: Arial, sans-serif !important;
-  font-size: 14px !important;
-  font-weight: 500 !important;
-
- /* =========================================================
-   EVIDENCIJA — TIPOGRAFIJA KAO NASLOV
-   ========================================================= */
-
-.records-menu-button {
-  width: 100% !important;
-  min-height: 82px !important;
-
-  padding: 12px 16px !important;
-
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-
-  gap: 5px !important;
-
-  box-sizing: border-box !important;
-
-  background: rgba(255, 255, 255, 0.94) !important;
-
-  border: 1px solid #cbd8d4 !important;
-  border-radius: 12px !important;
-
-  color: #111111 !important;
-
-  text-align: center !important;
-
-  font-family: Arial, sans-serif !important;
-
-  cursor: pointer !important;
-}
-
-/* GLAVNI NASLOV */
-.records-menu-button strong {
-  display: block !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  color: #111111 !important;
-
-  font-family: Arial, sans-serif !important;
-  font-size: 17px !important;
-  font-weight: 900 !important;
-
-  line-height: 1.15 !important;
-
-  letter-spacing: 0 !important;
-}
-
-/* OPIS */
-.records-menu-button span {
-  display: block !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  color: #111111 !important;
-
-  font-family: Arial, sans-serif !important;
-  font-size: 15px !important;
-  font-weight: 400 !important;
-
-  line-height: 1.25 !important;
-
-  letter-spacing: 0 !important;
-}
-
-/* MOBITEL */
-@media (max-width: 700px) {
-
-  .records-menu-button {
-    min-height: 78px !important;
-    padding: 11px 14px !important;
-  }
-
-  .records-menu-button strong {
-    font-size: 17px !important;
-  }
-
-  .records-menu-button span {
-    font-size: 14px !important;
-  }
-
-}
-/* =========================================================
-   IZBOR RAZREDA — UREDAN PRIKAZ
-   ========================================================= */
-
-.grade-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  gap: 14px !important;
-  width: 100% !important;
-}
-
-.grade-button {
-  width: 100% !important;
-  min-height: 90px !important;
-
-  padding: 14px 10px !important;
-
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-
-  gap: 6px !important;
-
-  box-sizing: border-box !important;
-
-  background: rgba(255, 255, 255, 0.94) !important;
-
-  border: 1px solid #cbd8d4 !important;
-  border-radius: 12px !important;
-
-  color: #111111 !important;
-
-  text-align: center !important;
-
-  font-family: Arial, sans-serif !important;
-
-  cursor: pointer !important;
-}
-
-/* 1. RAZRED */
-.grade-button strong {
-  display: block !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  color: #111111 !important;
-
-  font-family: Arial, sans-serif !important;
-
-  font-size: 16px !important;
-  font-weight: 900 !important;
-
-  line-height: 1.15 !important;
-
-  letter-spacing: 0 !important;
-}
-
-/* BROJ UČENIKA */
-.grade-button span {
-  display: block !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  color: #111111 !important;
-
-  font-family: Arial, sans-serif !important;
-
-  font-size: 14px !important;
-  font-weight: 400 !important;
-
-  line-height: 1.2 !important;
-
-  letter-spacing: 0 !important;
-}
-
-/* EFEKAT KLIKA / MIŠA */
-.grade-button:hover {
-  background: rgba(255, 255, 255, 0.99) !important;
-  border-color: #9fbdb3 !important;
-}
-
-.grade-button:active {
-  transform: scale(0.98);
-}
-
-/* MOBITEL */
-@media (max-width: 700px) {
-
-  .grade-grid {
-    gap: 12px !important;
-  }
-
-  .grade-button {
-    min-height: 88px !important;
-    padding: 13px 8px !important;
-  }
-
-  .grade-button strong {
-    font-size: 16px !important;
-  }
-
-  .grade-button span {
-    font-size: 14px !important;
-  }
-
-}
-/* TEST GRBA - NE ZAUZIMA PROSTOR */
-#app::after {
-  content: "TEST";
-  position: absolute !important;
-  width: 30px !important;
-  height: 30px !important;
-  left: 50% !important;
-  top: 100px !important;
-  transform: translateX(-50%) !important;
-
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-
-  background: red !important;
-  color: white !important;
-  font-size: 8px !important;
-  font-weight: bold !important;
-
-  z-index: 999999 !important;
-  pointer-events: none !important;
+.page-head:has(+ .settings-page) h1,
+.page-head:has(+ .settings-page) .today-line {
+  margin-left: 34px;
 }

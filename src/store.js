@@ -7,7 +7,7 @@ export const prayers = [
 ];
 export const statuses = [
   { id: 'P', label: 'Prisutan', className: 'present' }, { id: 'N', label: 'Nije prisutan', className: 'absent' },
-  { id: 'B', label: 'Bolestan', className: 'sick' }, { id: 'K', label: 'Kući', className: 'home' }
+  { id: 'O', label: 'Opravdano', className: 'sick' }, { id: 'K', label: 'Kući', className: 'home' }
 ];
 
 const seed = () => ({
